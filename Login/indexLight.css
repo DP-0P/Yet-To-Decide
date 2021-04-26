@@ -289,7 +289,7 @@ header.hero h1{
   margin-bottom:0.75rem;
 }
 header.hero h1 span{
-  color:var(--primary);
+  color:#38d39f;
 }
 header.hero p{
   font-family: "Raleway-medium";
@@ -316,13 +316,13 @@ header.hero p{
 }
 
 .btn-primary {
-  background:var(--primary);
+  background:#38d39f;
   color:var(--heaven);
 }
 .btn-primary:hover{
   background:var(--heaven);
-  color:var(--primary); 
-  border:1px solid var(--primary);
+  color:#38d39f; 
+  border:#38d39f;
 }
 .btn-secondary{
   background:var(--secondary);

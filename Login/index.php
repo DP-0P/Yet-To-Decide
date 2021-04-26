@@ -97,9 +97,10 @@ $user_data = check_login($con);
                     <div class="navbar magic-shadow">
                         <div class="container flex justify-center">
                             <a href="#">Home</a>
-                            <a href="#">About us</a>
-                            <a href="#">Products</a>
-                            <a href="#">Contact us</a>
+                            <a href="#">Download</a>
+                            <a href="#">Upload</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Contact Us</a>
                         </div>
                     </div>
                 </nav>
@@ -110,13 +111,10 @@ $user_data = check_login($con);
                             <span>Welcome to</span>
                             <img src="./icons/logo-2.svg" alt="">
                         </div>
-                        <h1>The World Best <span>Shoping</span> Website</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the
-                            industry's standard dummy.</p>
+                        <h1>Notes <span>Exchange</span> System</h1>
+                        <p>The Only Thing We're Serious About <br> Is Future.</p>
                         <div>
-                            <button class="btn btn-primary">Read More</button>
-                            <button class="btn btn-secondary">Shop Now</button>
+                            <button class="btn btn-primary" targe>Available Books</button>
                         </div>
                         <div class="hero-image">
                             <img src="./images/straw.png" alt="">
@@ -124,8 +122,8 @@ $user_data = check_login($con);
                     </div>
                 </header>
 
-               
-                
+
+
 
                 <footer>
                     <div class="container">
@@ -135,7 +133,7 @@ $user_data = check_login($con);
                                 passage.</p>
                             <button class="btn btn-secondary">Read More</button>
                         </div>
-                        
+
                         <div class="box">
                             <h3>Follow Us</h3>
                             <div>
@@ -167,7 +165,7 @@ $user_data = check_login($con);
                                 </ul>
                             </div>
                         </div>
-                        
+
                     </div>
                 </footer>
                 <footer class="copyright">
