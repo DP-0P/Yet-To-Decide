@@ -21,12 +21,18 @@ $user_data = check_login($con);
 </head>
 
 <body>
-    <div class="main-wrapper">
+<div class="main-wrapper">
         <div class="nav-background">
             <div class="mobile-logo">
                 <img src="./icons/logo.svg" alt="">
             </div>
             <div class="mobile-nav">
+                <div class="cart">
+                    <div class="flex items-center">
+                        <img src="./icons/cart-dark.svg" alt="">
+                        <a href="#">0 Items - ($0.00)</a>
+                    </div>
+                </div>
                 <div class="nav-top">
                     <ul>
                         <li>
@@ -36,22 +42,52 @@ $user_data = check_login($con);
                             <a href="#">About us</a>
                         </li>
                         <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
                             <a href="#">Contact us</a>
                         </li>
                         <li>
-                            <a href="#">Log Out</a>
+                            <a href="#">Log in</a>
+                        </li>
+                        <li>
+                            <a href="#">Register</a>
                         </li>
                     </ul>
+                </div>
+                <div class="contact flex items-center">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+84) 123 456 789</h5>
+                        <h6>E-mail : support@freshmeal.com</h6>
+                    </div>
+                </div>
+                <div class="time flex items-center">
+                    <img src="./icons/clock.svg" alt="">
+                    <div>
+                        <h5>Working Hours:</h5>
+                        <h6>Mon - Sat (8.00am - 12.00am)</h6>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="site-content-wrapper">
             <div class="nav-trigger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart">
                     <line x1="12" y1="20" x2="12" y2="10" />
                     <line x1="18" y1="20" x2="18" y2="4" />
-                    <line x1="6" y1="20" x2="6" y2="16" />
-                </svg>
+                    <line x1="6" y1="20" x2="6" y2="16" /></svg>
             </div>
             <div class="site-content">
                 <header class="topbar">
@@ -115,10 +151,12 @@ $user_data = check_login($con);
                         <p>The Only Thing We're Serious About <br> Is Future.</p>
                         <div>
                             <button class="btn btn-primary" targe>Available Books</button>
+                            <button class="btn btn-secondary">Shop Now</button>
                         </div>
-                        <div class="hero-image">
-                            <img src="./images/straw.png" alt="">
-                        </div>
+                        <!-- <div class="hero-image">
+                            <img src="photos/homebook.png" alt="">
+                        </div> -->
+                        
                     </div>
                 </header>
 
