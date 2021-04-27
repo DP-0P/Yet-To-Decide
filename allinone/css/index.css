@@ -1,4 +1,9 @@
 /* colors  */
+html{
+  scroll-behavior: smooth;
+}
+
+
 :root {
   --primary:#EEBF00;
   --secondary:#232B38;
@@ -210,7 +215,7 @@ nav .navbar a:hover{
   display:block;
   width:100%;
   height:69px;
-  background-image:url(../icons/shadow.svg);
+  background-image:url(../img/shadow.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -227,7 +232,7 @@ nav .navbar a:hover{
   display:block;
   width:100%;
   height:69px;
-  background-image:url(../icons/shadow-sm.svg);
+  background-image:url(../img/shadow-sm.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;

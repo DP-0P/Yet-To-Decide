@@ -79,7 +79,6 @@ $user_data = check_login($con);
                         </div>
                         <div class="auth flex items-center">
                             <div>
-                                <img src="./icons/user-icon.svg" alt="">
                                 <a href="logout.php">Log Out</a>
                             </div>
                         </div>
@@ -111,10 +110,10 @@ $user_data = check_login($con);
                     <div class="navbar magic-shadow">
                         <div class="container flex justify-center">
                             <a href="#">Home</a>
-                            <a href="#">Download</a>
-                            <a href="#">Upload</a>
-                            <a href="#">About Us</a>
-                            <a href="#">Contact Us</a>
+                            <a href="../php/downloads.php">Download</a>
+                            <a href="../php/indexUpload.php">Upload</a>
+                            <a href="#aboutUs">About Us</a>
+                            <a href="#testing">Contact Us</a>
                         </div>
                     </div>
                 </nav>
@@ -131,14 +130,14 @@ $user_data = check_login($con);
                             <button class="btn btn-primary" targe>Available Books</button>
                         </div>
                         <!-- <div class="hero-image">
-                            <img src="photos/homebook.png" alt="">
+                            <img src="../photos/homebook.png" alt="">
                         </div> -->
 
                     </div>
                 </header>
-
-                <section class="about-meal">
-                    <div class="container">
+                    
+                <section class="about-meal" id="aboutUs">
+                    <div class="container" >
                         <h1 class="section-heading">About <span>Us</span></h1>
                         <div class="about-meal-wrap flex">
                             <div class="flex-1">
@@ -215,7 +214,7 @@ $user_data = check_login($con);
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/index.js"></script>
 
     
 </body>
