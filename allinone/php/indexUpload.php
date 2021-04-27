@@ -20,7 +20,7 @@
             <option value="PME">PME</option>
             <option value="ADM">ADM</option>
             
-          <textarea name="descriptions" rows="8" cols="63" placeholder="Brief description about the note/book."></textarea>
+          <textarea name="descriptions" rows="8" cols="63">Brief description about the note/book.</textarea>
           <input type="file" name="myfile"> <br>
           <button type="submit" name="save">upload</button>
         </form>
