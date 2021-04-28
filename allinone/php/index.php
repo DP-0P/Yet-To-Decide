@@ -117,7 +117,7 @@ $user_data = check_login($con);
                         </div>
                     </div>
                 </nav>
-
+ 
                 <header class="hero flex items-center">
                     <div class="container">
                         <div class="welcome flex items-center">
