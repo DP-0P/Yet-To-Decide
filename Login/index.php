@@ -17,7 +17,7 @@ $user_data = check_login($con);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Note Exchange System</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../Login/index.css">
 </head>
 
 <body>
@@ -71,11 +71,7 @@ $user_data = check_login($con);
                 <header class="topbar">
                     <div class="container flex justify-between items-center">
                         <div class="icons">
-                            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
-                            <a href="#"><img src="./icons/twitter.svg" alt=""></a>
-                            <a href="#"><img src="./icons/google.svg" alt=""></a>
-                            <a href="#"><img src="./icons/instagram.svg" alt=""></a>
-                            <a href="#"><img src="./icons/search.svg" alt=""></a>
+                        <p class="userID">Current User: <?php echo $user_data['Name']; ?></p>
                         </div>
                         <div class="auth flex items-center">
                             <div>
@@ -110,8 +106,8 @@ $user_data = check_login($con);
                     <div class="navbar magic-shadow">
                         <div class="container flex justify-center">
                             <a href="#">Home</a>
-                            <a href="../php/downloads.php">Download</a>
-                            <a href="../php/indexUpload.php">Upload</a>
+                            <a href="../file-upload-download/downloads.php">Download</a>
+                            <a href="../file-upload-download/index.php">Upload</a>
                             <a href="#aboutUs">About Us</a>
                             <a href="#testing">Contact Us</a>
                         </div>
@@ -124,7 +120,7 @@ $user_data = check_login($con);
                             <span>Welcome to</span>
                             <img src="./icons/logo-2.svg" alt="">
                         </div>
-                        <h1>Notes <span>Exchange</span> System</h1>
+                        <h1>PDF<span>Hut</span></h1>
                         <p>The Only Thing We're Serious About <br> Is Future.</p>
                         <div>
                             <button class="btn btn-primary" targe>Available Books</button>
@@ -141,7 +137,7 @@ $user_data = check_login($con);
                         <h1 class="section-heading">About <span>Us</span></h1>
                         <div class="about-meal-wrap flex">
                             <div class="flex-1">
-                                <img src="../photos/book2.png" alt="">
+                                <img src="../Login/photos/book2.png" alt="">
                             </div>
                             <div class="flex-1">
                                 <h2>The Best We Do is Creating <br> Enviroment And Platform To study</h2>
@@ -214,7 +210,7 @@ $user_data = check_login($con);
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="mains.js"></script>
 
     
 </body>

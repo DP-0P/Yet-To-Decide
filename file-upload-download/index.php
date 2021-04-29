@@ -1,5 +1,13 @@
 <?php include 'filesLogic.php'; ?>
 
+
+<?php 
+session_start();
+
+	include("../Login/connection.php");
+	include("../Login/functions.php");
+$user_data = check_login($con);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +17,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Note Exchange System</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="../css/download.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -65,11 +73,7 @@
         <header class="topbar">
           <div class="container flex justify-between items-center">
             <div class="icons">
-              <a href="#"><img src="./icons/facebook.svg" alt=""></a>
-              <a href="#"><img src="./icons/twitter.svg" alt=""></a>
-              <a href="#"><img src="./icons/google.svg" alt=""></a>
-              <a href="#"><img src="./icons/instagram.svg" alt=""></a>
-              <a href="#"><img src="./icons/search.svg" alt=""></a>
+            <p class="userID">Current User: <?php echo $user_data['Name']; ?></p>
             </div>
             <div class="auth flex items-center">
               <div>
@@ -80,33 +84,12 @@
         </header>
 
         <nav>
-          <div class="top">
-            <div class="container flex justify-between">
-              <div class="contact flex items-center">
-                <img src="./icons/phone.svg" alt="">
-                <div>
-                  <h5>Call US: (+84) 123 456 789</h5>
-                  <h6>E-mail : support@freshmeal.com</h6>
-                </div>
-              </div>
-              <div class="branding">
-                <img src="./icons/logo.svg" alt="">
-              </div>
-              <div class="time flex items-center">
-                <img src="./icons/clock.svg" alt="">
-                <div>
-                  <h5>Working Hours:</h5>
-                  <h6>Mon - Sat (69.00am - 12.00am)</h6>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="navbar magic-shadow">
             <div class="container flex justify-center">
-              <a href="../php/index.php">Home</a>
-              <a href="#">Download</a>
-              <a href="../php/indexUpload.php">Upload</a>
-              <a href="../php/aboutUs.html">About Us</a>
+              <a href="../Login/index.php">Home</a>
+              <a href="../file-upload-download/downloads.php">Download</a>
+              <a href="#" id="down">Upload</a>
+              <a href="../Login/About Us.html">About Us</a>
               <a href="#testing">Contact Us</a>
             </div>
           </div>
@@ -114,29 +97,40 @@
 
         <header class="hero flex items-center">
           <div class="container">
-            <h1>Download <span>File</span></h1>
+            <h1>Upload <span>File</span></h1>
           </div>
         </header>
 
-        <table id="downTable">
-          <tr>
-            <th>Filename</th>
-            <th>size (in mb)</th>
-            <th>Downloads</th>
-            <th>Action</th>
-          </tr>
-          <tr>
-            <?php foreach ($files as $file) : ?>
-          <tr>
-            <td><?php echo $file['name']; ?></td>
-            <td><?php echo floor($file['size'] / 1000) . ' KB'; ?></td>
-            <td><?php echo $file['downloads']; ?></td>
-            <td><button class="btn btn-secondary" onclick="location.href=" downloads.php?file_id=<?php echo $file['id'] ?>">Download</button></td>
-          </tr>
-        <?php endforeach; ?>
+        <div class="containerUpload">
+          <div class="row">
+            <form action="index.php" method="post" enctype="multipart/form-data">
+              <label for="subject">Choose a subject:</label>
+              <select id="subject" name="subjects">
+                <option value="AD1">AD1</option>
+                <option value="ADM">ADM</option>
+                <option value="COA">COA</option>
+                <option value="CSW2">CSW2</option>
+                <option value="PME">PME</option>
+              </select>
 
-        </tr>
-        </table>
+              <div>
+                <label id="descri" for="desc">Description:</label>
+              </div>
+              <div>
+
+                <textarea id="des" rows="4" cols="50" name="descriptions" " placeholder=" Brief description about the note/book."></textarea>
+
+              </div>
+
+              <div class="row">
+                <div class="col-75">
+                  <input id="inputFile" type="file" name="myfile">
+                </div>
+              </div>
+              <button id="sub" class="btn btn-secondary" type="submit" name="save">Submit</button>
+            </form>
+          </div>
+        </div>
 
 
 
@@ -200,7 +194,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="../js/index.js"></script>
+  <script src="index.js"></script>
 
 
 </body>
