@@ -514,15 +514,18 @@
    
   }
 
-  
-
   #down, .btn:hover{
         background-color: #38d39f;
         color: white;
   }
 
-  table{
-    margin-bottom: 70px;
+  .containerUpload {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 45px;
   }
   
   

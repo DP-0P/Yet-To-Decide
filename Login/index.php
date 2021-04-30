@@ -82,30 +82,9 @@ $user_data = check_login($con);
                 </header>
 
                 <nav>
-                    <div class="top">
-                        <div class="container flex justify-between">
-                            <div class="contact flex items-center">
-                                <img src="./icons/phone.svg" alt="">
-                                <div>
-                                    <h5>Call US: (+84) 123 456 789</h5>
-                                    <h6>E-mail : support@freshmeal.com</h6>
-                                </div>
-                            </div>
-                            <div class="branding">
-                                <img src="./icons/logo.svg" alt="">
-                            </div>
-                            <div class="time flex items-center">
-                                <img src="./icons/clock.svg" alt="">
-                                <div>
-                                    <h5>Working Hours:</h5>
-                                    <h6>Mon - Sat (69.00am - 12.00am)</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="navbar magic-shadow">
                         <div class="container flex justify-center">
-                            <a href="#">Home</a>
+                            <a href="#" class="down" style="color: white;">Home</a>
                             <a href="../file-upload-download/downloads.php">Download</a>
                             <a href="../file-upload-download/index.php">Upload</a>
                             <a href="#aboutUs">About Us</a>

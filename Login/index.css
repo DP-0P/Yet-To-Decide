@@ -948,3 +948,7 @@ footer.copyright a{
   }
  
 }
+
+.down, .btn:hover{
+  background-color: #38d39f;
+}
