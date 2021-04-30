@@ -80,7 +80,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
                     <input type="password" class="input" name="password" placeholder="password">
                  </div>
               </div>
-              <a href="mailto:rjldas00@gmail.com,rajprusty99@gmail.com,deepakpattnayak2013@gmail.com">Forgot Password?</a>
+              <a href="../Login/ForgetPass/enter_email.php">Forgot Password?</a>
               <input type="submit" class="btn" value="Login">
                <div class="form-footer">
             Don't have an account? <a href="signup.php" class="ee">Sign Up</a>

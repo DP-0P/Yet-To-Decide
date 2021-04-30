@@ -1,6 +1,7 @@
 <?php include 'filesLogic.php'; ?>
 
 
+
 <?php 
 session_start();
 
@@ -35,16 +36,16 @@ $user_data = check_login($con);
         <div class="nav-top">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="../Login/index.php">Home</a>
             </li>
             <li>
-              <a href="#">Download</a>
+              <a href="../file-upload-download/downloads.php">Download</a>
             </li>
             <li>
-              <a href="#">Upload</a>
+              <a href="../file-upload-download/index.php">Upload</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="../Login/About.php" style="color: #38d39f;">About Us</a>
             </li>
             <li>
               <a href="#">Contact Us</a>
@@ -54,7 +55,7 @@ $user_data = check_login($con);
         <div class="time flex items-center">
           <img src="./icons/clock.svg" alt="">
           <div>
-            <a href="logout.php" class="mobileLogOut">
+            <a href="../Login/logout.php" class="mobileLogOut">
               <h5>Log Out</h5>
             </a>
           </div>
@@ -77,7 +78,7 @@ $user_data = check_login($con);
             </div>
             <div class="auth flex items-center">
               <div>
-                <a href="logout.php">Log Out</a>
+                <a href="../Login/logout.php">Log Out</a>
               </div>
             </div>
           </div>
@@ -89,13 +90,13 @@ $user_data = check_login($con);
               <a href="../Login/index.php">Home</a>
               <a href="../file-upload-download/downloads.php">Download</a>
               <a href="#" id="down">Upload</a>
-              <a href="../Login/About Us.html">About Us</a>
+              <a href="../Login/About.php">About Us</a>
               <a href="#testing">Contact Us</a>
             </div>
           </div>
         </nav>
 
-        <header class="hero flex items-center">
+        <header id="#homeScroll" class="hero flex items-center">
           <div class="container">
             <h1>Upload <span>File</span></h1>
           </div>
@@ -129,8 +130,12 @@ $user_data = check_login($con);
               </div>
               <button id="sub" class="btn btn-secondary" type="submit" name="save">Submit</button>
             </form>
+
+            
           </div>
         </div>
+
+        
 
 
 
@@ -143,6 +148,28 @@ $user_data = check_login($con);
                 passage.</p>
               <button class="btn btn-secondary" onclick="location.href='../php/About Us.html'">Read </button>
             </div>
+
+            <div class="box">
+                            <h3>Quik Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="../Login/index.php">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../file-upload-download/downloads.php">Download</a>
+                                </li>
+                                <li>
+                                    <a href="#homeScroll">Upload</a>
+                                </li>
+                                <li>
+                                    <a href="../Login/About.php">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+
+                            </ul>
+                        </div>
 
             <div class="box">
               <h3>Follow Us</h3>
@@ -180,7 +207,7 @@ $user_data = check_login($con);
         </footer>
         <footer class="copyright">
           <div>
-            Copyright © 2020 .All rights reserved by <a href="https://www.instagram.com/codersgyan/">Coder's Gyan</a>.
+          Copyright © 2021 .All rights reserved by <a href="https://github.com/codex-iter/Yet-To-Decide">PDFHut & Co.</a>
           </div>
         </footer>
       </div>

@@ -15,7 +15,10 @@ $user_data = check_login($con);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Note Exchange System</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>PDFHut</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../Login/index.css">
 </head>
@@ -35,16 +38,16 @@ $user_data = check_login($con);
                 <div class="nav-top">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="../Login/index.php" style="color: #38d39f;">Home</a>
                         </li>
                         <li>
-                            <a href="#">Download</a>
+                            <a href="../file-upload-download/downloads.php">Download</a>
                         </li>
                         <li>
-                            <a href="#">Upload</a>
+                            <a href="../file-upload-download/index.php">Upload</a>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="../Login/about.php">About Us</a>
                         </li>
                         <li>
                             <a href="#">Contact Us</a>
@@ -54,7 +57,9 @@ $user_data = check_login($con);
                 <div class="time flex items-center">
                     <img src="./icons/clock.svg" alt="">
                     <div>
-                    <a href="logout.php" class="mobileLogOut"><h5>Log Out</h5></a>
+                        <a href="../Login/logout.php" class="mobileLogOut">
+                            <h5>Log Out</h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -71,11 +76,11 @@ $user_data = check_login($con);
                 <header class="topbar">
                     <div class="container flex justify-between items-center">
                         <div class="icons">
-                        <p class="userID">Current User: <?php echo $user_data['Name']; ?></p>
+                            <p class="userID">Current User: <?php echo $user_data['Name']; ?></p>
                         </div>
                         <div class="auth flex items-center">
                             <div>
-                                <a href="logout.php">Log Out</a>
+                                <a id="logout" href="../Login/logout.php">Log Out</a>
                             </div>
                         </div>
                     </div>
@@ -84,23 +89,27 @@ $user_data = check_login($con);
                 <nav>
                     <div class="navbar magic-shadow">
                         <div class="container flex justify-center">
-                            <a href="#" class="down" style="color: white;">Home</a>
+                            <a href="#" class="navbar active">Home</a>
                             <a href="../file-upload-download/downloads.php">Download</a>
                             <a href="../file-upload-download/index.php">Upload</a>
                             <a href="#aboutUs">About Us</a>
-                            <a href="#testing">Contact Us</a>
+                            <a href="#">Contact Us</a>
                         </div>
                     </div>
                 </nav>
- 
+
                 <header class="hero flex items-center">
                     <div class="container">
-                        <div class="welcome flex items-center">
-                            <span>Welcome to</span>
+                        <div id="homeScroll" class="welcome flex items-center">
+                            <span style="font-size: 25px;">Welcome to</span>
+
                             <img src="./icons/logo-2.svg" alt="">
                         </div>
-                        <h1>PDF<span>Hut</span></h1>
-                        <p>The Only Thing We're Serious About <br> Is Future.</p>
+                        <h1 style="font-size:60px;">PDF<span>Hut</span></h1>
+
+                        <div >
+                            <p style="font-size: 25px;">The Only Thing We're Serious About <br> Is Future.</p>
+                        </div>
                         <div>
                             <button class="btn btn-primary" targe>Available Books</button>
                         </div>
@@ -110,20 +119,20 @@ $user_data = check_login($con);
 
                     </div>
                 </header>
-                    
+
                 <section class="about-meal" id="aboutUs">
-                    <div class="container" >
-                        <h1 class="section-heading">About <span>Us</span></h1>
+                    <div class="container">
+                        <h1 style="font-size: 60px;" class="section-heading">About <span>Us</span></h1>
                         <div class="about-meal-wrap flex">
                             <div class="flex-1">
                                 <img src="../Login/photos/book2.png" alt="">
                             </div>
                             <div class="flex-1">
                                 <h2>The Best We Do is Creating <br> Enviroment And Platform To study</h2>
-                                <p>We build and developed the place where you can find all the neccessary items 
-                                    like pdf, notes, books and many more. We help to make you thrive in your 
+                                <p>We build and developed the place where you can find all the neccessary items
+                                    like pdf, notes, books and many more. We help to make you thrive in your
                                     path to future.</p>
-                                <button class="btn btn-secondary" onclick="location.href='../php/aboutUS.html'"">Read More</button>
+                                <button class="btn btn-secondary" onclick="location.href='../Login/About.php'"">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -131,67 +140,81 @@ $user_data = check_login($con);
 
 
                 <footer>
-                    <div class="container">
-                        <div class="box">
-                            <h3>About us</h3>
-                            <p>It was popularised in the 1960 with the release of Latest sheets containing Lorem Ipsum
-                                passage.</p>
-                            <button class="btn btn-secondary" onclick="location.href='../php/About Us.html'">Read </button>
-                        </div>
+                    <div class=" container">
+                                    <div class="box">
+                                        <h3>About us</h3>
+                                        <p>It was popularised in the 1960 with the release of Latest sheets containing Lorem Ipsum
+                                            passage.</p>
+                                        <button class="btn btn-secondary" onclick="location.href='../php/About Us.html'">Read </button>
+                                    </div>
 
-                        <div class="box">
-                            <h3>Follow Us</h3>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/codersgyan">
-                                            <img src="./icons/facebook.svg" alt="">
-                                            <span>Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/CoderGyan">
-                                            <img src="./icons/twitter.svg" alt="">
-                                            <span>Twitter</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="./icons/google.svg" alt="">
-                                            <span>Google +</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/codersgyan/">
-                                            <img src="./icons/instagram.svg" alt="">
-                                            <span>Instagram</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                                    <div class="box">
+                                        <h3>Quick Links</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#homeScroll">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="../file-upload-download/downloads.php">Download</a>
+                                            </li>
+                                            <li>
+                                                <a href="../file-upload-download/index.php">Upload</a>
+                                            </li>
+                                            <li>
+                                                <a href="../Login/About.php">About us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Contact us</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="box">
+                                        <h3 style="text-align: center;">Follow Us</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="https://github.com/RIJULDAS">
+                                                <i class='bx bxl-github'></i>
+                                                    <span>Rijul</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/SouravReal">
+                                                <i class='bx bxl-github'></i>
+                                                    <span>Sourav</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/DP-0P">
+                                                    <i class='bx bxl-github'></i>
+                                                    <span>Deepak</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
                             </div>
+                            </footer>
+                            <footer class="copyright">
+                                <div>
+                                    Copyright © 2021 .All rights reserved by <a href="https://github.com/codex-iter/Yet-To-Decide">PDFHut & Co.</a>
+                                </div>
+                            </footer>
                         </div>
-
                     </div>
-                </footer>
-                <footer class="copyright">
-                    <div>
-                        Copyright © 2020 .All rights reserved by <a href="https://www.instagram.com/codersgyan/">Coder's Gyan</a>.
-                    </div>
-                </footer>
             </div>
-        </div>
-    </div>
 
 
 
 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="mains.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="mains.js"></script>
 
-    
+
 </body>
 
 </html>

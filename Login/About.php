@@ -37,26 +37,27 @@ $user_data = check_login($con);
         <div class="nav-top">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="../Login/index" ">Home</a>
             </li>
             <li>
-              <a href="#">Download</a>
+              <a href="../file-upload-download/downloads.php">Download</a>
             </li>
             <li>
-              <a href="#">Upload</a>
+              <a href="../file-upload-download/index.php" >Upload</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="../Login/about.php" style="color: #38d39f;">About Us</a>
             </li>
             <li>
               <a href="#">Contact Us</a>
+            </li>
             </li>
           </ul>
         </div>
         <div class="time flex items-center">
           <img src="./icons/clock.svg" alt="">
           <div>
-            <a href="logout.php" class="mobileLogOut">
+            <a href="../Login/logout.php" class="mobileLogOut">
               <h5>Log Out</h5>
             </a>
           </div>
@@ -79,7 +80,7 @@ $user_data = check_login($con);
             </div>
             <div class="auth flex items-center">
               <div>
-                <a href="logout.php">Log Out</a>
+                <a href="../Login/logout.php">Log Out</a>
               </div>
             </div>
           </div>
@@ -98,14 +99,14 @@ $user_data = check_login($con);
         </nav>
 
         <header class="hero flex items-center">
-          <div class="container">
+          <div id="#homeScroll" class="container">
             <h1>About <span>Us</span></h1>
           </div>
         </header>
 
         <div class="containerUpload">
 
-          
+
           <p>
             At Notes Exchange System , we’re tied in with presenting a flexible
             and simple platform for exchanging notes, regardless of whether it
@@ -119,21 +120,21 @@ $user_data = check_login($con);
             to help other individuals end up effective entrepreneurs by owning an
             Notes Exchange System establishment. We search for franchisees who are
             focused on quality of books, not compromising.
-        </p>
-        <p>
-          Today, we can be found in numerous nations and have our sights on
-          extending much more. Be that as it may, regardless of where you
-          discover us, quality will dependably be our formula.
-        </p>
-        <p>
-          We Believe in Quality. All around. Quality books and notes can’t be
-          made without quality initiative. Find out about the general population
-          driving The Notes Exchange System .
-        </p>
-      </div>
-        
-        
-        
+          </p>
+          <p>
+            Today, we can be found in numerous nations and have our sights on
+            extending much more. Be that as it may, regardless of where you
+            discover us, quality will dependably be our formula.
+          </p>
+          <p>
+            We Believe in Quality. All around. Quality books and notes can’t be
+            made without quality initiative. Find out about the general population
+            driving The Notes Exchange System .
+          </p>
+        </div>
+
+
+
         <footer>
           <div class="container">
             <div class="box">
@@ -141,6 +142,28 @@ $user_data = check_login($con);
               <p>It was popularised in the 1960 with the release of Latest sheets containing Lorem Ipsum
                 passage.</p>
               <button class="btn btn-secondary" onclick="location.href='../php/About Us.html'">Read </button>
+            </div>
+
+            <div class="box">
+              <h3>Quik Links</h3>
+              <ul>
+                <li>
+                  <a href="../Login/index.php">Home</a>
+                </li>
+                <li>
+                  <a href="../file-upload-download/downloads.php">Download</a>
+                </li>
+                <li>
+                  <a href="../file-upload-download/index.php">Upload</a>
+                </li>
+                <li>
+                  <a href="../Login/About.php">About us</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+
+              </ul>
             </div>
 
             <div class="box">
@@ -190,7 +213,7 @@ $user_data = check_login($con);
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="../file-upload-download/index.js"></script>
+  <script src="../Login/mains.js"></script>
 
 </body>
 

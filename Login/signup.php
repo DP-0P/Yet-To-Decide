@@ -125,6 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
 body{
     font-family: 'Poppins', sans-serif;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .wave{

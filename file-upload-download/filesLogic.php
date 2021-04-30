@@ -30,7 +30,7 @@ if (isset($_POST['save'])) { // if save button on the form is clicked
     
    
 
-    if (!in_array($fileActualExt, ['pdf', 'docx'])) {
+    if (!in_array($fileActualExt, ['pdf', 'docx','ppt','pptx'])) {
         echo "You cannot upload file of this type.";
     } elseif ($_FILES['myfile']['size'] > 1000000000) { 
         echo "Your file is too big!!";
@@ -38,8 +38,10 @@ if (isset($_POST['save'])) { // if save button on the form is clicked
         // move the uploaded (temporary) file to the specified destination
         if (move_uploaded_file($file, $destination)) {
             $sql = "INSERT INTO files (name, sname, description, size, downloads) VALUES ('$filename','$sname', '$desc', $size, 0)";
+           
             if (mysqli_query($conn, $sql)) {
-                echo "File uploaded successfully";
+                // echo "File uploaded successfully";
+                
             }
         } else {
             echo "Failed to upload file.";
