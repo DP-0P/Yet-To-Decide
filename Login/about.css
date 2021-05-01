@@ -272,7 +272,6 @@
   .nav-background .mobile-nav ul li a{
     text-decoration: none;
     color:#232B38;
-    font-family: "Raleway-medium";
   }
   .nav-background .mobile-nav ul li a:hover{
     color:#38d39f;
@@ -298,7 +297,6 @@
   .nav-background .cart a{
     color:#232B38;
     text-decoration: none;
-    font-family: "Raleway-bold";
   }
   .nav-background .cart img{
     margin-right:0.75rem;

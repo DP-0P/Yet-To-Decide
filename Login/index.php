@@ -50,7 +50,7 @@ $user_data = check_login($con);
                             <a href="../Login/about.php">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="../Login/contactUs.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +105,7 @@ $user_data = check_login($con);
 
                             <img src="./icons/logo-2.svg" alt="">
                         </div>
-                        <img src="photos/homebook.png" alt="" class="home-img">
+                        <img src="../Login/photos/homebook.png" alt="" class="home-img">
                         <h1 style="font-size:60px;">PDF<span>Hut</span></h1>
                         <div >
                             <p style="font-size: 25px;">The Only Thing We're Serious About <br> Is Future.</p>
@@ -142,7 +142,7 @@ $user_data = check_login($con);
                                     <div class="box">
                                         <h3>About us</h3>
                                         <p>It all Started with an idea of providing a simple platform where we all can exchange notes.</p>
-                                        <button class="btn btn-secondary" onclick="location.href='../php/About Us.html'">Read </button>
+                                        <button class="btn btn-secondary" onclick="location.href='../Login/about.php'">Read </button>
                                     </div>
 
                                     <div class="box">
@@ -158,7 +158,7 @@ $user_data = check_login($con);
                                                 <a href="../file-upload-download/index.php">Upload</a>
                                             </li>
                                             <li>
-                                                <a href="../Login/About.php">About us</a>
+                                                <a href="../Login/about.php">About us</a>
                                             </li>
                                             <li>
                                                 <a href="../Login/contactUs.html">Contact us</a>
@@ -209,7 +209,7 @@ $user_data = check_login($con);
             <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
             <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-            <script src="mains.js"></script>
+            <script src="../Login/mains.js"></script>
 
 
 </body>

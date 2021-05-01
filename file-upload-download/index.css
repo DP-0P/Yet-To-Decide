@@ -575,10 +575,13 @@
             }
 
             #subject{
-              margin: 15px;
+              margin
+              : 15px;
             }
 
-            
+            #inputfile{
+              margin-top: 150px;
+            }
 
             #des{
               margin: 15px;
@@ -586,14 +589,14 @@
               margin-top: 5px;
             }
 
+            #descri{
+              margin-top: 40px;
+            }
+
            #sub{
              margin-left: 375px;
            }
 
-           #down, .btn:hover{
-            background-color: #38d39f;
-            color: white;
-      }
 
             
 

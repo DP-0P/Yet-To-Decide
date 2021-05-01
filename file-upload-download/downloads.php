@@ -21,7 +21,7 @@ $user_data = check_login($con);
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   <title>Note Exchange System</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="download.css">
+  <link rel="stylesheet" href="../file-upload-download/download.css">
 </head>
 
 <body>
@@ -91,17 +91,17 @@ $user_data = check_login($con);
           <div class="navbar magic-shadow">
             <div class="container flex justify-center">
               <a href="../Login/index.php">Home</a>
-              <a href="#" id="down">Download</a>
+              <a href="#" class="navbar active">Download</a>
               <a href="../file-upload-download/index.php">Upload</a>
               <a href="../Login/about.php">About Us</a>
-              <a href="#testing">Contact Us</a>
+              <a href="../Login/contactUs.html">Contact Us</a>
             </div>
           </div>
         </nav>
 
         <header id="homeScroll" class="hero flex items-center">
           <div class="container">
-            <h1 style="font-size: 50px;">Download <span>File</span></h1>
+            <h1 style="font-size: 50px; text-align:center">Download <span>File</span></h1>
           </div>
         </header>
 

@@ -81,7 +81,7 @@ $user_data = check_login($con);
             </div>
             <div class="auth flex items-center">
               <div>
-                <a href="../Login/logout.php">Log Out</a>
+                <a  style="color: #FE4545;" href="../Login/logout.php">Log Out</a>
               </div>
             </div>
           </div>
@@ -92,9 +92,9 @@ $user_data = check_login($con);
             <div class="container flex justify-center">
               <a href="../Login/index.php">Home</a>
               <a href="../file-upload-download/downloads.php">Download</a>
-              <a href="#" id="down">Upload</a>
+              <a href="#" class="navbar active">Upload</a>
               <a href="../Login/About.php">About Us</a>
-              <a href="#testing">Contact Us</a>
+              <a href="../Login/contactUs.html">Contact Us</a>
             </div>
           </div>
         </nav>
@@ -128,10 +128,10 @@ $user_data = check_login($con);
 
               <div class="row">
                 <div class="col-75">
-                  <input id="inputFile" type="file" name="myfile">
+                  <input  id="inputFile" type="file" name="myfile">
+                  <button  id="sub" class="btn btn-secondary" type="submit" name="save">Submit</button>
                 </div>
               </div>
-              <button id="sub" class="btn btn-secondary" type="submit" name="save">Submit</button>
             </form>
 
             
@@ -163,7 +163,7 @@ $user_data = check_login($con);
                   <a href="../Login/About.php">About us</a>
                 </li>
                 <li>
-                  <a href="#">Contact us</a>
+                  <a href="../Login/contactUs.html">Contact us</a>
                 </li>
 
               </ul>

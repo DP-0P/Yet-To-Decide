@@ -16,6 +16,9 @@ $user_data = check_login($con);
   <meta charset="UTF-8" />
   <title>Explore hist</title>
   <link rel="stylesheet" href="../Login/about.css" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
@@ -79,7 +82,7 @@ $user_data = check_login($con);
             </div>
             <div class="auth flex items-center">
               <div>
-                <a href="../Login/logout.php">Log Out</a>
+                <a style="color: #FE4545" href="../Login/logout.php">Log Out</a>
               </div>
             </div>
           </div>
@@ -92,14 +95,14 @@ $user_data = check_login($con);
               <a href="../file-upload-download/downloads.php">Download</a>
               <a href="../file-upload-download/index.php">Upload</a>
               <a href="#" id="down">About Us</a>
-              <a href="#testing">Contact Us</a>
+              <a href="../Login/contactUs.html">Contact Us</a>
             </div>
           </div>
         </nav>
 
         <header class="hero flex items-center">
           <div id="#homeScroll" class="container">
-            <h1>About <span>Us</span></h1>
+            <h1 style="text-align: center; font-size: 50px;" >About <span>Us</span></h1>
           </div>
         </header>
 
