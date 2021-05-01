@@ -1,11 +1,11 @@
 <?php include 'filesLogic.php'; ?>
 
 
-<?php 
+<?php
 session_start();
 
-	include("../Login/connection.php");
-	include("../Login/functions.php");
+include("../Login/connection.php");
+include("../Login/functions.php");
 $user_data = check_login($con);
 ?>
 
@@ -16,6 +16,9 @@ $user_data = check_login($con);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   <title>Note Exchange System</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="download.css">
@@ -74,11 +77,11 @@ $user_data = check_login($con);
         <header class="topbar">
           <div class="container flex justify-between items-center">
             <div class="icons">
-            <p class="userID">Current User: <?php echo $user_data['Name']; ?></p>
+              <p class="userID">Current User: <?php echo $user_data['Name']; ?></p>
             </div>
             <div class="auth flex items-center">
               <div>
-                <a href="../Login/logout.php">Log Out</a>
+                <a style="color: #FE4545;" href="../Login/logout.php">Log Out</a>
               </div>
             </div>
           </div>
@@ -98,110 +101,39 @@ $user_data = check_login($con);
 
         <header id="homeScroll" class="hero flex items-center">
           <div class="container">
-            <h1>Download <span>File</span></h1>
+            <h1 style="font-size: 50px;">Download <span>File</span></h1>
           </div>
         </header>
 
         <table id="downTable">
-    <tr>
-      <!-- <th>ID</th> -->
-      <th>Filename</th>
-      <th>Subject Name</th>
-      <th>Description</th>
-      <th>Size </th>
-      <th>Downloads</th>
-      <th>Action</th>
-</tr>
+          <tr>
+            <!-- <th>ID</th> -->
+            <th>Filename</th>
+            <th>Subject Name</th>
+            <th>Description</th>
+            <th>Size </th>
+            <th>Downloads</th>
+            <th>Action</th>
+          </tr>
 
-    <tr>
-      <?php foreach ($files as $file) : ?>
-        <tr>
-          <!-- <td><?php echo $file['id']; ?></td> -->
-          <td><?php echo $file['name']; ?></td>
-          <td><?php echo $file['sname']; ?></td>
-          <td><?php echo $file['description']; ?></td>
-          <td><?php echo floor($file['size'] / 1000) . ' KB'; ?></td>
-          <td><?php echo $file['downloads']; ?></td>
-          <td><a href="downloads.php?file_id=<?php echo $file['id'] ?>"><button class="btn btn-secondary" >Download</button></a></td>
+          <tr>
+            <?php foreach ($files as $file) : ?>
+          <tr>
+            <!-- <td><?php echo $file['id']; ?></td> -->
+            <td><?php echo $file['name']; ?></td>
+            <td><?php echo $file['sname']; ?></td>
+            <td><?php echo $file['description']; ?></td>
+            <td><?php echo floor($file['size'] / 1000) . ' KB'; ?></td>
+            <td><?php echo $file['downloads']; ?></td>
+            <td><a href="downloads.php?file_id=<?php echo $file['id'] ?>"><button class="btn btn-secondary">Download</button></a></td>
 
-          
+          </tr>
+        <?php endforeach; ?>
 
-          
         </tr>
-      <?php endforeach; ?>
-
-      </tr>
-  </table>
-
-
-
-
-        <footer>
-          <div class="container">
-            <div class="box">
-              <h3>About us</h3>
-              <p>It was popularised in the 1960 with the release of Latest sheets containing Lorem Ipsum
-                passage.</p>
-              <button class="btn btn-secondary" onclick="location.href='../php/About Us.html'">Read </button>
-            </div>
-
-            <div class="box">
-                            <h3>Quik Links</h3>
-                            <ul>
-                                <li>
-                                    <a href="../Login/index.php">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#homeScroll">Download</a>
-                                </li>
-                                <li>
-                                    <a href="../file-upload-download/index.php">Upload</a>
-                                </li>
-                                <li>
-                                    <a href="../Login/About.php">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact us</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-            <div class="box">
-              <h3>Follow Us</h3>
-              <div>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/codersgyan">
-                      <img src="./icons/facebook.svg" alt="">
-                      <span>Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/CoderGyan">
-                      <img src="./icons/twitter.svg" alt="">
-                      <span>Twitter</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./icons/google.svg" alt="">
-                      <span>Google +</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/codersgyan/">
-                      <img src="./icons/instagram.svg" alt="">
-                      <span>Instagram</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </footer>
-        <footer class="copyright">
+        </table>
+        
+        <footer  class="copyright">
           <div>
             Copyright © 2021 .All rights reserved by <a href="https://github.com/codex-iter/Yet-To-Decide">PDFHut & Co.</a>
           </div>

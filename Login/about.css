@@ -1,42 +1,8 @@
-:root {
-    --primary:#38d39f;
-    --secondary:#232B38;
-    --ternary:#6C6C6C;
-    --danger:#FE4545;
-    --pure:#FEFEFE;
-    --light:#F0F0F0;
-    --heaven:#FFFFFF;
-    --footer:#2D333F;
-  }
-  
-  #downTable {
-      font-family: Arial, Helvetica, sans-serif;
-      border-collapse: collapse;
-      width: 85%;
-      margin-left: auto;
-    margin-right: auto;
-    }
-    
-    #downTable td, #downTable th {
-      border: 1px solid #ddd;
-      padding: 8px;
-    }
-    
-    #downTable tr:nth-child(even){background-color: #f2f2f2;}
-    
-    #downTable tr:hover {background-color: #ddd;}
-    
-    #downTable th {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: left;
-      background-color: #38d39f;
-      color: white;
-      font-size: large;
-    }
+
   
   /* Reset  */
   *{
+    font-family: 'poppins';
     padding:0;
     margin:0;
     box-sizing: border-box;
@@ -76,7 +42,7 @@
   .nav-background{
       width:100%;
       height:100%;
-      background:#F0F0F0;
+      background:#ff0000;
       position: absolute;
       top:0;
       left:0;
@@ -133,7 +99,6 @@
   
   .mobileLogOut{
     color: #501717;
-    color-h
   }
   
   
@@ -177,11 +142,9 @@
       padding:1.5rem 0;
   }
   nav .top .contact h5,  nav .top .time h5{
-      font-family:"Raleway-black";
       margin-bottom:0.25rem;
   }
   nav .top .contact h6, nav .top .time h6{
-    font-family:"Raleway-medium";
     letter-spacing: 0.055rem;
     font-size:0.75rem;
     color:#6C6C6C;
@@ -196,7 +159,6 @@
   nav .navbar a{
     text-decoration:none;
     color:#232B38;
-    font-family:"Raleway-semibold";
     font-size:1rem;
     padding:1rem 1.5rem;
     transition:all .3s ease;
@@ -295,6 +257,12 @@
   footer{
     background:#2D333F;
     padding:4rem 0;
+    left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+
   }
   footer .container{
     display:flex;
@@ -459,10 +427,10 @@
   }
   
   @media (max-width:768px){
-    .about-meal .about-meal-wrap{
+    .about-uss .about-uss-wrap{
         flex-direction: column;
     }
-    .about-meal .about-meal-wrap img{
+    .about-uss .about-uss-wrap img{
         width:100%;
         margin-bottom: 2rem;
     }

@@ -93,7 +93,7 @@ $user_data = check_login($con);
                             <a href="../file-upload-download/downloads.php">Download</a>
                             <a href="../file-upload-download/index.php">Upload</a>
                             <a href="#aboutUs">About Us</a>
-                            <a href="#">Contact Us</a>
+                            <a href="../Login/contactUs.html">Contact Us</a>
                         </div>
                     </div>
                 </nav>
@@ -105,30 +105,28 @@ $user_data = check_login($con);
 
                             <img src="./icons/logo-2.svg" alt="">
                         </div>
+                        <img src="photos/homebook.png" alt="" class="home-img">
                         <h1 style="font-size:60px;">PDF<span>Hut</span></h1>
-
                         <div >
                             <p style="font-size: 25px;">The Only Thing We're Serious About <br> Is Future.</p>
                         </div>
+                        
                         <div>
                             <button class="btn btn-primary" targe>Available Books</button>
                         </div>
-                        <!-- <div class="hero-image">
-                            <img src="../photos/homebook.png" alt="">
-                        </div> -->
 
                     </div>
                 </header>
 
-                <section class="about-meal" id="aboutUs">
+                <section class="about-uss" id="aboutUs">
                     <div class="container">
                         <h1 style="font-size: 60px;" class="section-heading">About <span>Us</span></h1>
-                        <div class="about-meal-wrap flex">
+                        <div class="about-uss-wrap flex">
                             <div class="flex-1">
                                 <img src="../Login/photos/book2.png" alt="">
                             </div>
-                            <div class="flex-1">
-                                <h2>The Best We Do is Creating <br> Enviroment And Platform To study</h2>
+                            <div  class="flex-1">
+                                <h2 style="font-family: 'poppins';">The Best We Do is Creating <br> Enviroment And Platform To study</h2>
                                 <p>We build and developed the place where you can find all the neccessary items
                                     like pdf, notes, books and many more. We help to make you thrive in your
                                     path to future.</p>
@@ -143,8 +141,7 @@ $user_data = check_login($con);
                     <div class=" container">
                                     <div class="box">
                                         <h3>About us</h3>
-                                        <p>It was popularised in the 1960 with the release of Latest sheets containing Lorem Ipsum
-                                            passage.</p>
+                                        <p>It all Started with an idea of providing a simple platform where we all can exchange notes.</p>
                                         <button class="btn btn-secondary" onclick="location.href='../php/About Us.html'">Read </button>
                                     </div>
 
@@ -164,7 +161,7 @@ $user_data = check_login($con);
                                                 <a href="../Login/About.php">About us</a>
                                             </li>
                                             <li>
-                                                <a href="#">Contact us</a>
+                                                <a href="../Login/contactUs.html">Contact us</a>
                                             </li>
 
                                         </ul>

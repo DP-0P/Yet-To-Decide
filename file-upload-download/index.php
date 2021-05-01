@@ -17,6 +17,9 @@ $user_data = check_login($con);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Note Exchange System</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="index.css">
 </head>
@@ -98,7 +101,7 @@ $user_data = check_login($con);
 
         <header id="#homeScroll" class="hero flex items-center">
           <div class="container">
-            <h1>Upload <span>File</span></h1>
+            <h1 style="font-size: 50px;">Upload <span>File</span></h1>
           </div>
         </header>
 
@@ -135,11 +138,6 @@ $user_data = check_login($con);
           </div>
         </div>
 
-        
-
-
-
-
         <footer>
           <div class="container">
             <div class="box">
@@ -150,61 +148,60 @@ $user_data = check_login($con);
             </div>
 
             <div class="box">
-                            <h3>Quik Links</h3>
-                            <ul>
-                                <li>
-                                    <a href="../Login/index.php">Home</a>
-                                </li>
-                                <li>
-                                    <a href="../file-upload-download/downloads.php">Download</a>
-                                </li>
-                                <li>
-                                    <a href="#homeScroll">Upload</a>
-                                </li>
-                                <li>
-                                    <a href="../Login/About.php">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact us</a>
-                                </li>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="../Login/index.php">Home</a>
+                </li>
+                <li>
+                  <a href="#homeScroll">Download</a>
+                </li>
+                <li>
+                  <a href="../file-upload-download/index.php">Upload</a>
+                </li>
+                <li>
+                  <a href="../Login/About.php">About us</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
 
-                            </ul>
-                        </div>
+              </ul>
+            </div>
 
             <div class="box">
-              <h3>Follow Us</h3>
-              <div>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/codersgyan">
-                      <img src="./icons/facebook.svg" alt="">
-                      <span>Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/CoderGyan">
-                      <img src="./icons/twitter.svg" alt="">
-                      <span>Twitter</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./icons/google.svg" alt="">
-                      <span>Google +</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/codersgyan/">
-                      <img src="./icons/instagram.svg" alt="">
-                      <span>Instagram</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <h3 style="text-align: center;">Follow Us</h3>
+              <ul style="text-align: center;">
+                <li>
+                  <a href="https://github.com/RIJULDAS">
+                    <i class='bx bxl-github'></i>
+                    <span>Rijul</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/SouravReal">
+                    <i class='bx bxl-github'></i>
+                    <span>Sourav</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/DP-0P">
+                    <i class='bx bxl-github'></i>
+                    <span>Deepak</span>
+                  </a>
+                </li>
+              </ul>
             </div>
 
           </div>
         </footer>
+
+        
+
+
+
+
+        
         <footer class="copyright">
           <div>
           Copyright © 2021 .All rights reserved by <a href="https://github.com/codex-iter/Yet-To-Decide">PDFHut & Co.</a>

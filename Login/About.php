@@ -15,8 +15,7 @@ $user_data = check_login($con);
 <head>
   <meta charset="UTF-8" />
   <title>Explore hist</title>
-  <link rel="stylesheet" href="../Login/aboutus.css" />
-  <link rel="stylesheet" href="./style/kimbie.dark.css" />
+  <link rel="stylesheet" href="../Login/about.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
@@ -135,71 +134,7 @@ $user_data = check_login($con);
 
 
 
-        <footer>
-          <div class="container">
-            <div class="box">
-              <h3>About us</h3>
-              <p>It was popularised in the 1960 with the release of Latest sheets containing Lorem Ipsum
-                passage.</p>
-              <button class="btn btn-secondary" onclick="location.href='../php/About Us.html'">Read </button>
-            </div>
-
-            <div class="box">
-              <h3>Quik Links</h3>
-              <ul>
-                <li>
-                  <a href="../Login/index.php">Home</a>
-                </li>
-                <li>
-                  <a href="../file-upload-download/downloads.php">Download</a>
-                </li>
-                <li>
-                  <a href="../file-upload-download/index.php">Upload</a>
-                </li>
-                <li>
-                  <a href="../Login/About.php">About us</a>
-                </li>
-                <li>
-                  <a href="#">Contact us</a>
-                </li>
-
-              </ul>
-            </div>
-
-            <div class="box">
-              <h3>Follow Us</h3>
-              <div>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/codersgyan">
-                      <img src="./icons/facebook.svg" alt="">
-                      <span>Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/CoderGyan">
-                      <img src="./icons/twitter.svg" alt="">
-                      <span>Twitter</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./icons/google.svg" alt="">
-                      <span>Google +</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/codersgyan/">
-                      <img src="./icons/instagram.svg" alt="">
-                      <span>Instagram</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </footer>
+        
         <footer class="copyright">
           <div>
             Copyright © 2021 .All rights reserved by <a href="https://github.com/codex-iter/Yet-To-Decide">PDFHut & Co.</a>
