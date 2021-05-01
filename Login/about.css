@@ -1,6 +1,4 @@
 
-  
-  /* Reset  */
   *{
     font-family: 'poppins';
     padding:0;
@@ -42,7 +40,7 @@
   .nav-background{
       width:100%;
       height:100%;
-      background:#ff0000;
+      background:#38d39f;
       position: absolute;
       top:0;
       left:0;
@@ -101,19 +99,9 @@
     color: #501717;
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
   header.topbar{
       background:#232B38;
       color:#FEFEFE;
-      font-family:"Raleway-semibold";
       padding:0.75rem 0;
   }
   header.topbar .auth > div a{
@@ -254,85 +242,8 @@
     color:#38d39f;
   }
   
-  footer{
-    background:#2D333F;
-    padding:4rem 0;
-    left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-
-  }
-  footer .container{
-    display:flex;
-    color:#FEFEFE;
-  }
+ 
   
-  footer .box{
-    flex:1;
-    margin-right:2rem;
-    text-align:center;
-  }
-  
-  footer .instagram-api img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-  }
-  footer .instagram-api .post-wrap{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-  }
-  footer .instagram-api .post-wrap > div{
-    width: calc(1/3*100% - (1 - 1/3)*10px);
-    margin-bottom:10px;
-  }
-  footer .box ul{
-    list-style-type: none;
-  }
-  footer .box ul li a{
-    color:#FEFEFE;
-    text-decoration: none;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-  }
-  footer .box ul li a:hover{
-    color:#38d39f;
-  }
-  footer .box h3{
-    border-bottom:1px solid #38d39f;
-    padding-bottom:1rem;
-    margin-bottom:1rem;
-  }
-  
-  footer .box p{
-    line-height: 1.6;
-    margin-bottom:1rem;
-  }
-  footer .box ul li{
-    margin-bottom:1rem;
-  }
-  footer .box:nth-child(3) > div {
-    display:flex;
-    justify-content: center;
-  }
-  footer .box:nth-child(3){
-    text-align: left;
-  }
-  footer .box:nth-child(3) h3{
-    text-align: center;
-  }
-  footer .box:nth-child(3) > div img{
-    margin-right:1rem;
-  }
-  footer .box:nth-child(3) ul li{
-    margin-bottom:1.5rem;
-  }
   
   footer.copyright{
     padding:1rem 0;
